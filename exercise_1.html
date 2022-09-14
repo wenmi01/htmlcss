@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table, th, td {
+                border: 1px solid blue ;
+            }
+
+            p span {
+              font-weight: 900;  
+            }
+
+        </style>
+        <script src="https://kit.fontawesome.com/90705492f7.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MqDlsjc8GLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br />
+            <iframe src="https://www.google.com" width="600" height="250"></iframe>
+        <img src="" widht="100" height="100" />
+        <br />
+        <hr />
+        <center>Lists</center>
+        <ol>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <ol>
+                <li>Sub1</li>
+                <li>Sub2</li>
+            </ol>
+        </ol>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+        <center>Tables</center>
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th style="background-color:aquamarine; color:red;">Header 1</th>
+                    <th style="text-align: left;">Header 2</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Lower Header 1 colspan 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Cell 3</td>
+                    <td rowspan=2>Cell 4 rowspan 2</td>
+                </tr>
+                <tr>
+                    <td>Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <center>Paragraph</center>
+        <p><span>This is inside a paragraph.</span></p>
+        <button>Click Me</button>
+        <i class="fa-solid fa-stapler"></i>
+        <center>Divs</center>
+        <div>
+            <header>Div header</header>
+        </div>
+        <div>
+            <nav>Nav</nav>
+        </div>
+        <div>
+            <aside>
+                Aside
+            </aside>
+
+            <!-- Banner -->
+            <section>
+                <form action="https://www.google.com" target=+"_blank" method="POST">
+                    <div>
+                        <fieldset>
+                            <legend>Student Name</legend>
+                            <input name="first_name" required placeholder="First Name" />
+                            <input name="last_name" required placeholder="Last Name" />
+                    </fieldset>
+                    </div>
+                    
+                    <div>
+                        <fieldset>
+                            <legend>Login Details</legend>
+                            <label>Email</label>
+                            <input type="email" name="email" required /> <!-- HTML 5 -->
+                            <label>Password</label>
+                            <input type="password" name="password" />
+                            <label>Password Confirm</label>
+                            <input type="password" name="password_confirm" />
+                        </fieldset>
+                    </div>
+                    
+                    <div>
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <input type="number" name="age" />
+                            <input type="date" name="birthdate" />
+
+                            <input id="check1" type="checkbox" name="agree" />
+                            <label for="check1">Agree?</label>
+
+                            <input id="radio_1" type="radio" name="radio_oo" value="1" />
+                            <input id="radio_1" type="radio" name="radio_oo" value="2" checked />
+                            <input id="radio_1" type="radio" name="radio_oo" value="3" />
+
+                            
+                            <input id="check_2" type="checkbox" name="check_oo" value="1" checked />
+                            <input id="check_2" type="checkbox" name="check_oo" value="2" />
+                            <input id="check_2" type="checkbox" name="check_oo" value="3" />
+                            
+                            <div>
+                                <select name="status" style="width:300px;">
+                                    <option>-- SELECT STATUS -- </option>
+                                    <option value="S" selected>Single</option>
+                                    <option value="M">Married</option>
+                                    <option value="W">Widow</option>
+                                    <option value="D">Divorced</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <textarea name="description1" placeholder="Description" rows="10" cols="30" maxlenght="300"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Attachement</legend>
+                        <input type="file" name="att_1" accept=".png,.jpeg,.jpg,.pdf" />
+                    </fieldset>
+                    <div>
+                        <input type="button" value="Submit" />
+                        <input type="submit" value="Send" />
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+
+        <div>
+            <footer>footer</footer>
+        </div>
+    </div>
+    </body>
+</html>

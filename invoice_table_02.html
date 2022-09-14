@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Invoice Table</title>
+        <style>
+            table, th, td {
+                border: 1px solid indigo ;
+            }
+
+            th {
+                background-color:plum;
+                height: 35px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+        </style>
+    </header>
+    <body>
+        <form action="#" method="GET">
+        <fieldset>
+            <legend>Invoice Details</legend>
+            <div>
+                <label>Invoice To:</label> <input type="text" name="invoice_to" placeholder="name" required/>
+            </div>
+            <div>
+                <label>Contact #:</label> <input type="tel" name="contact_num" maxlength=14 placeholder="Contact #" required />
+                <label>Date:</label> <input type="date" name="invoice_date" required />
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item Description</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td><textarea name="description_1" rows="2" cols="98%"></textarea></td>
+                            <td style="text-align: right;"><input type="number" name="qty_1" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="unitprice_1" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="amount_1" style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="description_2" rows="2" cols="98%"></textarea></td>
+                            <td style="text-align: right;"><input type="number" name="qty_2" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="unitprice_2" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="amount_2" style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="description_3" rows="2" cols="98%"></textarea></td>
+                            <td style="text-align: right;"><input type="number" name="qty_3" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="unitprice_3" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="amount_3" style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="description_4" rows="2" cols="98%"></textarea></td>
+                            <td style="text-align: right;"><input type="number" name="qty_4"style="width: 95%; text-align:right; "  /></td>
+                            <td style="text-align: right;"><input type="number" name="unitprice_4" style="width: 95%; text-align:right; " /></td>
+                            <td style="text-align: right;"><input type="number" name="amount_4" style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                        <tr>
+                            <td colspan=3 style="text-align: right; font-weight:900;">Sub Total</td>
+                            <td style="text-align: right;"><input type="text" name="subtotal" readonly style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                        <tr>
+                            <td colspan=3 style="text-align: right; font-weight:900;">VAT (12%)</td>
+                            <td style="text-align: right;"><input type="text" name="vat" readonly style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                        <tr>
+                            <td colspan=3 style="text-align: right; font-weight:900;">Total</td>
+                            <td style="text-align: right;"><input type="text" name="total" readonly value="1000" style="width: 95%; text-align:right; " /></td>
+                        </tr>
+                    </thead>
+                </table>
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <div>
+                        Payment Method: <select name="payment_method" required>
+                            <option value="">-- SELECT PAYMENT METHOD --</option>
+                            <option value="cash">Cash</option>
+                            <option value="card">Card</option>
+                            <option value="check">Check</option>
+                            <option value="cod">Cash on Delivery</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="rad_home">Home</label>
+                        <input id="rad_home" type="radio" name="rad_ho" value="Home" />
+                        
+                        <label for="rad_office">Office</label>
+                        <input id="rad_office" type="radio" name="rad_ho" value="Office" />
+                        
+                    </div>
+                    <div>
+                        <textarea name="complete_address" rows="10" cols="50" maxlength="500" placeholder="Complete Address"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" name="submit" value="Submit" />
+                    </div>
+
+                </fieldset>
+            </div>
+        </fieldset>
+        </form>
+    </body>
+</html>
