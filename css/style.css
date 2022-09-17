@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* select font from OS in sequence selection */
+}
+
+.page-wrapper {
+    max-width: 1024px;
+    background: #ccc;
+    /* margin-top: 60px; */
+    margin: 0 auto; /* Spacing outside, top, bottom; auto: left and right, sequence: top, left, bottom, right */
+    /* margin: 60px auto 30px auto;*/
+    padding: 15px 15px 15px 15px ; /* Spacing inside, you can also specify which to change padding-left, etc... */
+    
+}
+
+header {
+    max-height: 50px;
+    width: 100%;
+    background-color: #aaa;
+    position: fixed; /* sticky */
+    /* position: absolute; /* externall move with scrolling */
+    left: 0px;
+    /* bottom: 0px; */
+    top: 0px;
+
+
+}
+
+.banner {
+    height: 400px;
+    background-image: url('../images/sunset.jpg') ;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: #000;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 46px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+section.about-me {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+section.my-portfolio div{
+    background-color: #ddd;
+    border: 1px solid #000;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 38px;
+    text-align: justify;
+}
+
+.d-none {
+    display: block; /* elements that are block, div by default is block */
+
+}
+
+.d-inline {
+    display: inline;
+    background-color: aqua;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex; /*container flexibility*/
+}
+
+.d-inline.d2 {
+    width: 200px;
+    display: inline-block;
+    background-color: red;
+}
+
+.d-none, .d-inline {
+    font-size: 16px;
+}
+
+section>.d-inline {
+    color: yellow;
+}
+
+section .d-inline {
+    color: green;
+}
+
+section>div>.d-inline {
+    color: red;
+}
+
+.with-direction {
+    /*flex-direction: column; /* default is row; another is column*/
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    flex-wrap: nowrap; /* wrap or owrap */
+}
+
+.with-direction>div {
+    height: 40px;
+    /* width: 300px; */
+    text-align: center;
+}
+
+/* switch */
+.d12 {
+    order: 2;
+}
+
+.d13 {
+    order: 1;
+    flex-grow: 2;
+}
+
+.d14 {
+    order: 3;
+    flex-grow: 2;
+}
+
+.d15 {
+    order: 4;
+}
+
+.d16 {
+    order: 5;
+    flex-grow: 3;
+}
+
+
+section.my-portfolio div.d-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: none;
+    border: none;
+    padding: 15px;
+}
+
+.d-flex>.d-inline{
+    display: inline-block;
+    width: 180px;
+    padding: 15px;
+    margin: 15px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 5px 10px #ccc;
+    border-radius: 4px;
+}
+
+section.my-portfolio .d-flex h4{
+    min-height: 60px;
+}
+
+section.my-portfolio .d-flex p{
+    font-size: 14px;
+}
+
