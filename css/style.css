@@ -141,7 +141,7 @@ section>div>.d-inline {
 }
 
 
-section.my-portfolio div.d-flex{
+section.my-portfolio div.d-flex {
     flex-wrap: wrap;
     justify-content: center;
     background-color: none;
@@ -149,7 +149,7 @@ section.my-portfolio div.d-flex{
     padding: 15px;
 }
 
-.d-flex>.d-inline{
+.d-flex>.d-inline {
     display: inline-block;
     width: 180px;
     padding: 15px;
@@ -160,11 +160,139 @@ section.my-portfolio div.d-flex{
     border-radius: 4px;
 }
 
-section.my-portfolio .d-flex h4{
+section.my-portfolio .d-flex h4 {
     min-height: 60px;
 }
 
-section.my-portfolio .d-flex p{
+section.my-portfolio .d-flex p {
     font-size: 14px;
 }
 
+/* CSS GRID Layout */
+
+#grid-layout>h2 {
+    color: black;
+}
+
+.basic-grid, 
+.advanced-grid {
+    display: grid;
+    /* grid-template-columns: auto auto auto; /* auto columns */
+    grid-template-columns: auto auto auto; /* 3 columns */
+    background-color: blueviolet;
+    gap: 20px;
+    padding: 10px;
+}
+
+.advanced-grid {
+    grid-template-columns: auto auto auto auto auto; /* 5 columns */
+}
+
+.basic-grid>div, 
+.advanced-grid>div {
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 52px;
+    background-color: #ffffffcc;
+    padding: 15px;
+    box-shadow: -5px 5px #999099cc; /* right, left, color */
+}
+
+.basic-grid .item1 {
+    grid-column-start: 1; /* starts at the vertical 1*/
+    grid-column-end: 3; /* */
+}
+
+.basic-grid .item6 {
+    grid-column: 2 / 4; /* sames as start and end */
+}
+
+.basic-grid .item5 {
+    /*
+    grid-row-start: 2;
+    grid-row-end: 4;
+    */
+    grid-row: 2 / 4;
+}
+
+.advanced-grid .item7 {
+    /* grid-area: row start / col start /row end / col end; */
+    grid-area: 1 / 2 / 3 / 5;
+}
+
+
+.advanced-grid .item5 {
+    grid-area: 3 / 3 / 5 / 5;
+}
+
+.advanced-grid .item10 {
+    grid-column: 1 / 1;
+}
+
+.advanced-grid .item4 {
+    grid-row: 1/3;
+}
+
+/* CSS Grud Exercise */
+#grid-layout2 h2 {
+    color: #9422b1cc;
+}
+
+.exergrid1, 
+.exergrid2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    background-color: blueviolet;
+    gap: 20px;
+    padding: 10px;
+}
+
+.exergrid2 {
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.exergrid1>div, 
+.exergrid2>div {
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 52px;
+    background-color: #ffffffcc;
+    padding: 15px;
+    box-shadow: -5px 5px #999099cc; /* right, left, color */
+}
+
+.exergrid1 .item1 {
+    /* grid-area: 1 / 1 / 3 / 2; */
+    grid-row: 1 / 3;
+}
+
+.exergrid1 .item3 {
+    /* grid-area: 1 / 3 / 2 / 5; */
+    grid-column: 3 / 5;
+}
+
+.exergrid1 .item8 {
+    /* grid-area: 3 / 3 / 4 / 5; */
+    grid-column: 3 / 5;
+
+}
+
+.exergrid1 .item10 {
+    /* grid-area: 3 / 1 / 5 / 2; */
+    grid-row: 3 / 5;
+}
+
+.exergrid2 .item5 {
+    grid-area: 1 / 5 / 2 / 7;
+    background-color: rgb(104, 199, 104);
+}
+
+.exergrid2 .item8 {
+    grid-area: 2 / 2 / 5 / 4;
+    background-color: aquamarine;
+}
+
+.exergrid2 .item9 {
+    grid-area: 2 / 4 / 5 / 6;
+    background-color: aqua;
+}
