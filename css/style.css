@@ -17,7 +17,7 @@ body {
 header {
     max-height: 50px;
     width: 100%;
-    background-color: #aaa;
+    background-color: #333;
     position: fixed; /* sticky */
     /* position: absolute; /* externall move with scrolling */
     left: 0px;
@@ -32,6 +32,7 @@ header {
     background-image: url('../images/sunset.jpg') ;
     background-size: cover;
     background-position: bottom;
+    margin-top: 60px;
 }
 
 h1 {
@@ -296,3 +297,69 @@ section.my-portfolio .d-flex p {
     grid-area: 2 / 4 / 5 / 6;
     background-color: aqua;
 }
+
+/* navbar */
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+nav ul li:hover a {
+    color: yellow;
+}
+
+nav ul li:hover {
+    background-color: forestgreen;
+}
+
+
+nav ul li {
+    display: inline-block; /* inline-block */
+    padding: 0 10px; /* top, left&right */
+}
+
+
+@media screen and (max-width:992px) {
+    /* responsive */
+    header {
+        height: auto;
+        position: absolute; /* or fixed , static, relative*/
+        background-color: #333333cc;
+    }
+
+    .banner {
+        margin-top: 280px;
+        
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+
+    /*
+    header {
+        position: absolute;
+        height: auto;
+        background-color: #333333cc;
+
+    }
+    */
+}
+
+
+@media screen and (max-width:768px) { /* 425px */
+    .banner {
+        background-image: none;
+        background-color: #333;
+    }
+
+}
+

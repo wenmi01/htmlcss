@@ -2,19 +2,29 @@
 <html>
     <head>
         <title>Rowen Remis R. Iral</title>
-        <link href="./css/style.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" /> <!-- old days uses media="screen,print,tv,tablet"-->
     </head>
     <body>
         <div class="page-wrapper">
 
-            <header>I am a header.</header>
+            <header>        
+                <nav class="navbar">
+                    <ul> <!-- block level -->
+                        <li><a href="#">Home</a></li> <!-- inline -->
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
             
             <section class="banner">
                 <h1>Rowen Remis R. Iral</h1>
                 <h2>Quantitative Developer</h2>
             </section>
 
-            <section class="about-me">
+            <section id="about-me" class="about-me">
                 <!-- <img src="images/roweniral_001.jpg" alt="Rowen Remis R. Iral" width="100" /> -->
 
                 <h3>About Me</h3>
@@ -28,7 +38,7 @@
                 
             </section>
 
-            <section class="my-portfolio">
+            <section id="portfolio" class="my-portfolio">
                 <h3>My Portfolio</h3>
                 <div class="d-flex">
                     <div class="d-inline">
