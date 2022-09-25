@@ -7,11 +7,14 @@
         <script scr="js/boostrap.min.js" type="javascript"></script>
 
         <style>
+            /*
             .row > div {
                 border: 1px solid #ccc;
                 background-color: #aaa;
                 text-align: center;
             }
+            */
+
             /* you can override some classes of boostrap
             .container etc
             .container-* wildcard selector
@@ -20,7 +23,7 @@
             /* div with class .container */
             .container,
             div[class="container"] {
-                background-color: #ccc;
+                /*background-color: #ccc;*/
                 border-radius: 0.5px;
             }
 
@@ -51,6 +54,16 @@
                 border-radius: 10% !important;
             }
             */
+
+            .list-group-item{
+                border: none;
+                text-align: left;
+            }
+
+            .card {
+                border: 1px solid red;
+            }
+
         </style>
 
     </head>
@@ -305,6 +318,14 @@
         </table>
         </div>
 
+        <!-- <div class="p-5" style="width: 400px; height:400px; border:1px solid #ccc; overflow:hidden;"> -->
+        <!-- <div class="pb-5" style="width: 400px; border:1px solid #ccc; overflow:hidden;"> -->
+        <!-- pb, pt, pl, pr -->
+        <div class="m-5 p-5" style="width: 400px;  border:1px solid #ccc; overflow:hidden;">
+            <img src="images/dr_strange.png" class="rounded" width="300" height="auto" />
+        </div>
+
+
         <img src="images/dr_strange.png" class="rounded" width="300" height="auto" />
         <img src="images/dr_strange.png" class="rounded-circle" width="300" height="auto" />
         <img src="images/dr_strange.png" class="rounded-circle" width="300" height="300" />
@@ -338,20 +359,189 @@
                 margin-bottom
             -->
             <img src="images/dr_strange.png" class="rounded float-start" width="300" height="auto" />
-            <img src="images/dr_strange.png" class="rounded float-start" width="300" height="auto" />
-            <p>Lorem ipsum dolor sit amet. Ut explicabo molestiae vel porro magnam qui quisquam autem At soluta debitis. Et rerum Quis aut sunt placeat ut galisum iste sit velit rerum.
-
-                Aut dignissimos necessitatibus sit dolor similique et facilis soluta ea error quod. Et illum praesentium et dolor dolorem et fugiat numquam id esse tempora aut consequuntur commodi.
-                
-                Et illo accusantium in odio dolor vel neque facilis vel autem amet aut neque aperiam? Aut provident distinctio et officiis velit nam voluptatum eligendi qui similique odit est reprehenderit amet. Et voluptates illum et explicabo hic harum laborum eum quam quia et pariatur nesciunt. Ea laborum corporis et error quia aut quia omnis ut incidunt soluta aut saepe voluptates. </p>
-
             <img src="images/dr_strange.png" class="rounded float-end" width="300" height="auto" />
+            <p>Lorem ipsum dolor sit amet. Ut explicabo molestiae vel porro magnam qui quisquam autem At soluta debitis. Et rerum Quis aut sunt placeat ut galisum iste sit velit rerum.
+
+                Aut dignissimos necessitatibus sit dolor similique et facilis soluta ea error quod. Et illum praesentium et dolor dolorem et fugiat numquam id esse tempora aut consequuntur commodi.
+                
+                Et illo accusantium in odio dolor vel neque facilis vel autem amet aut neque aperiam? Aut provident distinctio et officiis velit nam voluptatum eligendi qui similique odit est reprehenderit amet. Et voluptates illum et explicabo hic harum laborum eum quam quia et pariatur nesciunt. Ea laborum corporis et error quia aut quia omnis ut incidunt soluta aut saepe voluptates. </p>
+
+            <!-- <img src="images/dr_strange.png" class="rounded float-end" width="300" height="auto" /> -->
                 
             <p>Lorem ipsum dolor sit amet. Ut explicabo molestiae vel porro magnam qui quisquam autem At soluta debitis. Et rerum Quis aut sunt placeat ut galisum iste sit velit rerum.
 
                 Aut dignissimos necessitatibus sit dolor similique et facilis soluta ea error quod. Et illum praesentium et dolor dolorem et fugiat numquam id esse tempora aut consequuntur commodi.
                 
                 Et illo accusantium in odio dolor vel neque facilis vel autem amet aut neque aperiam? Aut provident distinctio et officiis velit nam voluptatum eligendi qui similique odit est reprehenderit amet. Et voluptates illum et explicabo hic harum laborum eum quam quia et pariatur nesciunt. Ea laborum corporis et error quia aut quia omnis ut incidunt soluta aut saepe voluptates. </p>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet. Ut explicabo molestiae vel porro magnam qui quisquam autem At soluta debitis. Et rerum Quis aut sunt placeat ut galisum iste sit velit rerum.
+
+                        Aut dignissimos necessitatibus sit dolor similique et facilis soluta ea error quod. Et illum praesentium et dolor dolorem et fugiat numquam id esse tempora aut consequuntur commodi.
+                        
+                        Et illo accusantium in odio dolor vel neque facilis vel autem amet aut neque aperiam? Aut provident distinctio et officiis velit nam voluptatum eligendi qui similique odit est reprehenderit amet. Et voluptates illum et explicabo hic harum laborum eum quam quia et pariatur nesciunt. Ea laborum corporis et error quia aut quia omnis ut incidunt soluta aut saepe voluptates. </p>
+                    </div>
+                    <div class="card-footer">
+                        Card Footer
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Card Title</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">Item 1</li>
+                            <li class="list-group-item">Item 2</li>
+                            <li class="list-group-item">Item 3</li>
+                            <li class="list-group-item">Item 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Card Title</h2>
+                        <div style="position:relative;">
+                            <h4 style="position:relative; top:60px; color:#fff; z-index: 999;">Multiverse</h4>
+                            <input type="checkbox" id="strange" style="position:relative; top:30px;left:-130px"/>
+                            <label for="strange">
+                                <img src="images/dr_strange.png" class="rounded" width="300" height="auto" />
+                            </label>
+                            
+                        </div>
+                        
+                    <p>Lorem ipsum dolor sit amet. Ut explicabo molestiae vel porro magnam qui quisquam autem At soluta debitis. Et rerum Quis aut sunt placeat ut galisum iste sit velit rerum.
+
+                        Aut dignissimos necessitatibus sit dolor similique et facilis soluta ea error quod. Et illum praesentium et dolor dolorem et fugiat numquam id esse tempora aut consequuntur commodi.
+                        
+                        Et illo accusantium in odio dolor vel neque facilis vel autem amet aut neque aperiam? Aut provident distinctio et officiis velit nam voluptatum eligendi qui similique odit est reprehenderit amet. Et voluptates illum et explicabo hic harum laborum eum quam quia et pariatur nesciunt. Ea laborum corporis et error quia aut quia omnis ut incidunt soluta aut saepe voluptates. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form class="border p-5 my-3 rounded">
+                <div class="row">
+                    <div class="my-3 col">
+                        <label class="form-label">First Name</label>
+                        <input class="form-control" type="text" name="first_name"/>
+                    </div>
+                    <div class="my-3 col">
+                        <label class="form-label">Last Name</label>
+                        <input class="form-control" type="text" name="last_name"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <label class="form-label">Email</label>
+                        <input class="form-control" type="email" name="email"/>
+                    </div>
+                    <div class="col my-3">
+                        <label class="form-label">Contact #</label>
+                        <input type="form-control" type="text" name="contact_number"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <textarea class="form-control" name="address" placeholder="Add address here."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <input class="form-control" type="file"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <label class="form-label">Payment Method</label>
+                        <select class="form-select" name="payment_method">
+                            <option>--</option>
+                            <option>GCash</option>
+                            <option>Credit Card</option>
+                            <option>Paypal</option>
+                            <option>Cash on Delivery</option>
+                        </select>
+                    </div>
+                    <div class="col my-3">
+                        <label class="form-label">Amount</label>
+                        <input class="form-control" type="number" name="amount"/>
+                    </div>
+                    <div class="col my-3">
+                        <label class="form-label">VAT</label>
+                        <input class="form-control" type="number" name="vat"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <input id="curr_aud" class="form-check-input" type="radio" name="currency"/>
+                        <label for="curr_aud" class="form-label me-3">AUD</label>
+                        <input id="curr_php" class="form-check-input" type="radio" name="currency"/>
+                        <label for="curr_php" class="form-label me-3">PHP</label>
+                        <input id="curr_usd" class="form-check-input" type="radio" name="currency"/>
+                        <label for="curr_usd" class="form-label me-3">USD</label>
+                    </div>
+                </div>
+                <h4>Add-Ons</h4>
+                <div class="row">
+                    <div class="col my-3">
+                        <input id="gift_card" class="form-check-input" type="checkbox" name="gift_card"/>
+                        <label for="gift_card" class="form-label">With Gift Card</label>
+                        <input id="discount" class="form-check-input" type="checkbox" name="discount"/>
+                        <label for="discount" class="form-label">With 10% Discount</label>
+                        <input id="ecobag" class="form-check-input" type="checkbox" name="ecobag"/>
+                        <label for="ecobag" class="form-label">In Ecobag</label>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col my-3">
+                        <label class="form-label">Delivery Date</label>
+                        <input class="form-control" type="date" name="delivery_date"/>
+                    </div>
+                    <div class="col my-3">
+                        <!-- this is like a submit button -->
+                        <input class="form-control" type="image" name="delivery_image" src="./images/dr_strange.png" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <label class="form-label">Range</label>
+                        <input class="form-range" type="range" name="range" step="5" min="0" max="20" />
+                        <!--
+                        <input type="range" name="range" step="5" min="0" max="20" />
+                        -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <button class="btn btn-primary">Submit Primary</button>
+                        <button class="btn btn-success">Submit Success</button>
+                        <button class="btn btn-secondary">Submit Secondary</button>
+                        <button class="btn btn-warning">Warning</button>
+                        <button class="btn btn-danger">Danger Delete</button>
+
+                    </div>
+                    <div class="col my-3">
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
         </div>
 
     </body>

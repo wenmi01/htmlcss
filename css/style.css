@@ -10,16 +10,17 @@ body {
     /* margin-top: 60px; */
     margin: 0 auto; /* Spacing outside, top, bottom; auto: left and right, sequence: top, left, bottom, right */
     /* margin: 60px auto 30px auto;*/
-    padding: 15px 15px 15px 15px ; /* Spacing inside, you can also specify which to change padding-left, etc... */
+    padding: 0px 15px 15px 30px ; /* Spacing inside, you can also specify which to change padding-left, etc... */
     
 }
 
 header {
     max-height: 50px;
     width: 100%;
-    background-color: #333;
-    position: fixed; /* sticky */
+    /* background-color: #333; */
+    /*position: fixed; /* sticky */
     /* position: absolute; /* externall move with scrolling */
+    position: absolute;
     left: 0px;
     /* bottom: 0px; */
     top: 0px;
@@ -46,17 +47,22 @@ h1 {
 h2 {
     color: #fff;
     text-align: center;
+    font-size: 32px;
 }
 
+/*
 section.about-me {
     margin-top: 60px;
     margin-bottom: 60px;
 }
+*/
 
-section.my-portfolio div{
+/*
+section.my-portfolio div {
     background-color: #ddd;
     border: 1px solid #000;
 }
+*/
 
 .about-me p {
     font-size: 18px;
@@ -101,7 +107,7 @@ section .d-inline {
 }
 
 section>div>.d-inline {
-    color: red;
+    color: violet;
 }
 
 .with-direction {
@@ -234,7 +240,7 @@ section.my-portfolio .d-flex p {
     grid-row: 1/3;
 }
 
-/* CSS Grud Exercise */
+/* CSS Grid Exercise */
 #grid-layout2 h2 {
     color: #9422b1cc;
 }
@@ -299,44 +305,45 @@ section.my-portfolio .d-flex p {
 }
 
 /* navbar */
+.navbar {
+    background-color: #333333cc;
+}
+
 nav ul {
     list-style: none;
-    margin: 0;
+    margin: 0px;
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 50px;
-    font-weight: 500;
-}
-
-nav ul li:hover a {
-    color: yellow;
-}
-
-nav ul li:hover {
-    background-color: forestgreen;
-}
-
 
 nav ul li {
     display: inline-block; /* inline-block */
-    padding: 0 10px; /* top, left&right */
+    padding: 0px 10px; /* top, left&right */
 }
 
+nav ul li a{
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 18px;
+    color:#fff;
+}
 
-@media screen and (max-width:992px) {
+nav ul li:hover{
+    background-color:forestgreen;
+}
+
+nav ul li:hover a {
+    color:burlywood;
+}
+
+@media screen and (max-width: 992px) {
     /* responsive */
     header {
         height: auto;
+        /*background-color: #333333cc;*/
         position: absolute; /* or fixed , static, relative*/
-        background-color: #333333cc;
     }
 
     .banner {
         margin-top: 280px;
-        
     }
 
     nav ul li{
@@ -354,9 +361,9 @@ nav ul li {
     */
 }
 
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width:768px) { /* 425px */
-    .banner {
+    .banner{
         background-image: none;
         background-color: #333;
     }

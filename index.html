@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rowen Remis R. Iral</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1" />
+         <!-- old days uses media="screen,print,tv,tablet"-->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet"/>
+        <script scr="./js/boostrap.min.js" type="javascript"></script>
+
+        <style>
+            .img-thumbnail {
+                padding: 0.5rem;
+            }
+
+            .rounded-circle>img {
+                position: relative;
+                left: -40px;
+            }
+
+            #profile-photo {
+                max-width: 210px;
+                max-height: 210px;
+                overflow: none;
+                margin: -100px auto;
+            }
+
+            #profile-photo>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .my-portfolio {
+                background-color:#ccc;
+            }
+
+            .my-portfolio>row {
+                justify-content: center;
+            }
+
+            .my-portfolio h4.card-title {
+                height: 80px;
+            }
+
+            .work-education>.container>.row>.col.text-end {
+                border-right: 4px solid green;
+            }
+            
+            .work-education>.container>.row>.col.order-last {
+                border-left: 4px solid green;
+            }
+
+            .col.text-end::after,
+            .col.order-last::after{
+                content: "\2666";
+                font-size: 42px;
+                color: green;
+                position:relative;
+                right: -28px;
+                bottom:36px;
+            }
+
+            .col.order-last::after {
+                left: -28px;
+            }
+
+            button::before {
+                content: ">";
+                font-size: 24px;
+            }
+
+            @media screen and (max-width:768px) {
+                .work-education>.container>.row>.col {
+                    display: none;
+                }
+
+                .work-education>.container>.row>.col.text-end,
+                .work-education>.container>.row>.col.order-last{
+                    display: block;
+                    text-align: center !important;
+                    margin-bottom: 30px;
+                }
+
+                .col.text-end::after,
+                .col.order-last::after{
+                    content: '';
+                }
+
+                .work-education>.container>.row>.col.text-end {
+                    border-right:none;
+                }
+                
+                .work-education>.container>.row>.col.order-last {
+                    border-left: none;
+                }
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+            <header>        
+                <nav class="navbar">
+                    <ul> <!-- block level -->
+                        <li><a href="#">Home</a></li> <!-- inline -->
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section class="banner">
+                <div class="container">
+                    <div class="row align-items-center">                 
+                        <div class="col-sm-12 col-md-4 offset-md-1">
+                            <h1 class="h1 mb-4 text-nowrap">Rowen Remis R. Iral</h1>
+                            <h2 class="h2 text-nowrap">Fullstack Quant Developer</h2>
+                        </div>
+                        <div class="col-sm-12 col-md-4 offset-md-2">
+                            <div id="profile-photo" class="img-thumbnail p3-3 mt-1">
+                                <img src="images/roweniral_001.jpg" height="200px" width="200px"/>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+
+            <section id="about-me" class="about-me">
+                <!-- <img src="images/roweniral_001.jpg" alt="Rowen Remis R. Iral" width="100" /> -->
+                <div class="container pt-5 pb-5">
+                    <h3 class="text-center mb-5">About Me</h3>
+                    <p>Duke of AI, Cloud and Systems</p>
+                    
+                    <p>I was a Certified Technical Analyst under Society of Technical Analysts (an organization under the International Federation of Technical Analysts) in the financial industry.</p>
+                    
+                    <p>I was a certified IT Engineer with background in Marketing, Data Science, Analytics and Artificial Intelligence.  My experience spans over 15 years.  I used to design system as a Solutions Architect both on the on-premise and cloud, and then implement them as a DevOps Engineer in some of my engagements. </p>
+                    
+                    <p>I now do work also as a Full Stack Developer for Quant and Trading Firms and private investors and institutions.</p>
+                </div>
+                
+            </section>
+
+            <section id="portfolio" class="my-portfolio pt-5 pb-5">
+                <div class="container">
+                    <h3 class="text-center mb-5">My Portfolio</h3>
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-evenly">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">Flamingo AI</h4>
+                                    <p>Analyze and keep operational system running.  Understood the architecture from the ground up so you can continue to recreate an unrecoverable system code and infrastructure.  DevOps and AI pipeline analysis, with review on the NLP engine and other moving parts in both Cloud and ML part.  The product runs on Kubernetes in Google Cloud and AWS.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">Telecoms Data</h4>
+                                    <p>Worked with Peritus Knowledge Services to carry clients' telco data.  Prepare and design Data Science infrastructures and implemented it.  Maintained their company website up to speed and operational with the challenges of the OS in the webserver. Worked with design and marketing team to continue improving the website.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">Volt Bank - A digital Bank</h4>
+                                    <p>Tech leadership on Alphazetta's global analytics team in Philippines. Managed and worked with Google cloud Architect and Database experts to keep the systems running.  Worked with a full stack developer and Sales Force Developers to create custom reports for the bank and other clients.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">ServeSpire</h4>
+                                    <p>Prepared and designed this service provider's website, materials and their stack.  Built their website using HTML, CSS, Bootstrap, Reactjs and backend that uses both nodejs, and PHP & Laravel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">Private Traders & Investors</h4>
+                                    <p>Lead and worked with quants and traders to prepare risk managed algorithms.  Deployed a data science product that predicts next price.  Built other systems for use with the team's trading team that uses ReactJS, Nodejs, Php, Laravel, Python and R.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">Friendster, Inc.</h4>
+                                    <p>Worked on with this social media website www.friendster.com  Migrated workloads from on-premise to the cloud.  AWS management and deployment, DevOps, automation with Chef, managing systems with ruby, Ruby on Rails, Php and monitoring systems with the cloud and Nagios monitoring systems.  Wrote installation scripts that prepares the developer's computers and production servers.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="work-education">
+
+                <section class="work-education">
+                    <div class="container pt-5 pb-5">
+                        <h3 class="text-center mb-5">Work Experience</h3>
+                        
+                        <div class="row">
+                            <div class="col order-last">
+                                <div class="px-5">
+                                    <h4>Contractor</h4>
+                                    <div>.Net / AWS Solutions Architect</div>
+                                    <div>August 2022 - Present</div>
+                                </div>
+                            </div>
+                            <div class="col"></div> 
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                <div class="px-5">
+                                    <h4>Contractor</h4>
+                                    <div>.Net / AWS Solutions Architect</div>
+                                    <div>August 2022 - Present</div>
+                                </div>
+                            </div>
+                            <div class="col"></div> 
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <div class="px-5">
+                                    <h4>Data Company</h4>
+                                    <div>Solutions Architect</div>
+                                    <div>August 2021 - Present</div>
+                                </div>
+                            </div>
+                            <div class="col"></div> 
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                <h4>BPO company</h4>
+                                <div>Data Science Manager</div>
+                                <div>January 2021 - August 2021</div>
+                            </div>
+                            <div class="col"></div> 
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <h4>BPO Software Company</h4>
+                                <div>DevOps Engineer</div>
+                                <div>August 2020 - August 2021</div>
+                            </div>
+                            <div class="col"></div> 
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                <h4>Alphazetta</h4>
+                                <div>Tech Lead</div>
+                                <div>December 2018 - August 2019</div>
+                            </div>
+                            <div class="col"></div> 
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <h4>Peritus Knowledge Services</h4>
+                                <div>Data Science Architect</div>
+                                <div>April 2016 - July 2019</div>
+                            </div>
+                            <div class="col"></div>   
+                        </div>                
+                        <div class="row">
+                            <div class="col order-last">
+                                <h4>Seven Seven Global Services</h4>
+                                <div>Cloud Infra Architect / Center of Excellence</div>
+                                <div>February 2016 - August 2016</div>
+                            </div> 
+                            <div class="col"></div>    
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <h4>CloudSwyft</h4>
+                                <div>Lead DevOps Engineer</div>
+                                <div>February 2015 - August 2015</div>
+                            </div>
+                            <div class="col"></div>     
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                <h4>Bazinga, Inc</h4>
+                                <div>Chief Information Officer / IT Officer</div>
+                                <div>February 2013 - February 2014</div>
+                            </div>
+                            <div class="col"></div>     
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <h4>Friendster, Inc.</h4>
+                                <div>Systems Administrator / DevOps Engineer</div>
+                                <div>January 2009 - February 2013</div>
+                            </div> 
+                            <div class="col"></div>    
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                <h4>Bradstreet Strategic Alliance</h4>
+                                <div>Systems Engineer</div>
+                                <div>August 2007 - December 2008</div>
+                            </div>
+                            <div class="col"></div>    
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <h4>Sykes Asia, Inc.</h4>
+                                <div>Technical Support Professional</div>
+                                <div>June 2006 - August 2006</div>
+                            </div> 
+                            <div class="col"></div>    
+                        </div>
+                        
+                        <h3 class="text-center mb-5 mt-5">Educational Attainment</h3>
+                        <div class="row">
+                            <div class="col text-end">
+                                College
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                High School
+                            </div>
+                            <div class="col"></div>                    
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                Elementary
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col order-last">
+                                Kinder
+                            </div>
+                            <div class="col"></div>                    
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="work-education-0">
+                                <!-- Eudcational Attainment -->
+                                <h3>Educational Attainment</h3>
+                                <ul>
+                                    <li>Full Stack Development</li>
+                                    <li>AWS Solutions Architect training</li>
+                                    <li>AWS Re/Start Graduate</li>
+                                    <li>Certified Technical Analyst</li>
+                                    <li>Data Science Fellowship</li>
+                                    <li>Data Analytics Bootcamp</li>
+                                    <li>
+                                        Master of Business Administration
+                                    </li>
+                                    <li>Genomic Data Science Specialization</li>
+                                    <li>Data Science Specialization</li>
+                                    <li>IT Engineers Training for Asian Countries</li>
+                                    <li>Certified Fundamental IT Engineer</li>
+                                    <li>
+                                        Bachelor of Science in Information Technology
+                                    </li>
+                                </ul>
+            </section>
+            
+            <footer>
+                <br />
+                <a href="https://fb.com/wenmi01" target="_blank" title="Rowen Iral facebook">Rowen Iral facebook</a>
+                <br />
+                <a href="https://ph.linkedin.com/in/rowenremis" target="_blank" title="Rowen Iral LinkedIn">Rowen Iral Linkedin</a>
+                <br />
+                <a href="https://www.instagram.com/wenupviolin" target="_blank" title="Wen Up Violin IG">Link to IG</a>
+                <br />
+            </footer>
+           
+
+    </body>
+
+</html>
