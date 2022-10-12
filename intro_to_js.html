@@ -4,6 +4,8 @@
         <ttile>Intro to JavaScript</ttile>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+        <script scr="js/kodego.js" type="text/javascript"></script>
+
         <style>
             .container {
                 border: 1px solid #ccc;
@@ -33,6 +35,11 @@
         <div class="container" id="main-container2"> Hello World!</div>
         <div class="container" id="main-container3"> Hello World!</div>
         <div class="container" id="main-container4"> Hello World!</div>
+
+        <script>
+            document.write("I'am a JavaScript output in the middle.");
+        </script>
+        
             <button onclick="onClickSmall()">Small</button>
             <button onclick="onClickMedium()">Medium</button>
             <button onclick="onClickLarge()">Large</button>
@@ -71,6 +78,8 @@
                 document.getElementById("main-container2").setAttribute("class","blue");
                 document.getElementById("main-container2").style.height = "40px";
             }
+
+            document.write("I'am a JavaScript output.");
         </script>
 
     </body>
