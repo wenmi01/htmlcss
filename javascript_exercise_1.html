@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Exercise 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <script>
+            function checkIt(){
+                number = parseInt(document.getElementById("number").value);
+                if ( number % 2 == 0)  {
+                    // alert("Even");
+                    document.getElementById('result').innerHTML = "Even";
+                } else {
+                    // alert("Odd");
+                    document.getElementById('result').innerHTML = "Odd";
+                }
+
+                console.log(document.getElementById('text').value.toLowerCase());
+                a = document.getElementById('text').value.toLowerCase().includes('a');
+                e = document.getElementById('text').value.toLowerCase().includes('e');
+                i = document.getElementById('text').value.toLowerCase().includes('i');
+                o = document.getElementById('text').value.toLowerCase().includes('o');
+                u = document.getElementById('text').value.toLowerCase().includes('u');
+                if (a || e || i || o || u){
+                    // alert("vowel");
+                    document.getElementById('result2').innerHTML = "vowel";
+                } else {
+                    // alert("consonant");
+                    document.getElementById('result2').innerHTML = "consonant";
+                }
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div id="result"></div>
+            <div id="result2"></div>
+        </div>
+        <div class="container">
+            <label for="number">Number</label>
+            <input type="text" name="number" id="number" />
+            <label for="text">Text</label>
+            <input type="text" name="text" id="text" maxlength="1" />
+            <button name="btnCheck" onclick="checkIt();">Check</button>
+        </div>
+    </body>
+</html>
