@@ -105,5 +105,98 @@
 
         </script>
 
+        <script>
+            let staff = [{name: "Oliver Queen", title: "CEO", gender: "male", age: 38, languages: ["english", "spanish"]}, 
+                {name: "Ben Hur", title: "Security consultant", gender: "male", age: 25, languages: ["latin", "italian"]}, 
+                {name: "Jessica Alba", title: "Admin Assistant", gender: "female", age: 23, languages: ["english", "spanish"]}, 
+                {name: "Pepper Piper", title: "Quality Assurance", gender: "female", age: 32, languages: ["english", "spanish"]},
+                {name: "Red Sullivan", title: "Project Manager", gender: "male", age: 27, languages: ["russian", "english"]},
+                {name:"Juan Dela Cruz", title: "Manager", age: 24, gender: "male", languages: ["russian", "french"]},
+                {name:"Anna Salvador", title: "Junior Dev", age: 21, gender: "female", languages: ["english", "french"]},
+                {name:"Mark Bautista", title: "Senior Fullstack Dev", age: 28, gender: "male", languages: ["russion", "spanish"]},
+                {name:"Micheal Garcia", title: "CEO", age: 40, gender: "male", languages: ["english", "latin"]}];
+
+                let setOfNumber = [23,34,56,34,5,8,11,43];
+
+        </script>
+
+        <script>
+        // find on staft list the oldest and youngest
+        // get the lowest number and highest number
+        </script>
+
+        <div class="container">
+            <div id="resultAge"></div>
+            <div id="resultNumber"></div>
+        </div>
+
+        <script>
+            let oldest = 0;
+            let idx = 0;
+
+             // Youngest
+            let youngest = 0;
+            let idx2 = 0;
+
+            staff.forEach((data, index, array) => {
+                if(index==0){
+                    oldest = data.age;
+                    youngest = data.age;
+                }
+                if (oldest < data.age){
+                    oldest = data.age;
+                    idx = index;
+                }
+
+                if (youngest > data.age){
+                    youngest = data.age;
+                    idx2 = index;
+                }
+            });
+            console.log("Oldest is " + staff[idx].name + " age: " + oldest);
+            document.getElementById('resultAge').innerHTML = "Oldest is " + staff[idx].name + " age: " + oldest;
+
+            console.log("Youngest is " + staff[idx2].name + " age: " + youngest);
+            document.getElementById('resultAge').innerHTML += "<br>" + "Youngest is " + staff[idx2].name + " age: " + youngest;
+
+            //
+            let highest;
+            let lowest;
+            setOfNumber.forEach((value, index, arr) => {
+                if(index == 0){
+                    highest = value;
+                    lowest = value;
+                }
+
+                if(highest < value){
+                    highest = value;
+                }
+                
+                if(lowest > value){
+                    lowest = value;
+                }
+            });
+
+            console.log("Lowest is " + lowest + " Highest is " + highest);
+            document.getElementById('resultNumber').innerHTML = "Lowest is " + lowest + "<br/>" + "Highest is " + highest;
+
+            //
+            // ascending
+            setOfNumber = setOfNumber.sort(function(a,b){
+                return a-b;
+            });
+            document.getElementById('resultNumber').innerHTML += "Highest: " + setOfNumber[setOfNumber.length-1] + "<br/>";
+            document.getElementById('resultNumber').innerHTML += "Lowest: " + setOfNumber[0];
+
+
+            //Ascending
+            setOfNumber = setOfNumber.sort(function(a,b){
+                return b-a;
+            });
+            document.getElementById('resultNumber').innerHTML += "Highest: " + setOfNumber[setOfNumber.length-1] + "<br/>";
+            document.getElementById('resultNumber').innerHTML += "Lowest: " + setOfNumber[0];
+        
+        </script>
+
     </body>
 </html>
