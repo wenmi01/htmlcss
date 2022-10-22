@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Exercise 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <script scr="js/boostrap.min.js" type="text/javascript"></script>
+        <script scr="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <!-- <script scr="js/bootstrap.bundle.min.js.map" type="text/javascript"></script> -->
+      
+    
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- This section is for the activity -->
+
+        <style>
+            table, th, td {
+                border: 1px solid indigo ;
+            }
+
+            th {
+                background-color:plum;
+                height: 35px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <script>
+            class Furniture{
+                constructor(name, type){
+                    this.name = name;
+                    this.type = type;
+                }
+            }
+
+            class NaturalFurn extends Furniture{
+                constructor(color){
+                    super(name,"Nature");
+                    this.color = color;
+                }
+            }
+
+            class ArtificialFurn extends Furniture{
+                constructor(color){
+                    super(name,"Artificial");
+                    this.color = color;
+                }
+            }
+
+            class Material extends Furniture{
+                constructor(material){
+                    this.material = material;
+                }
+            }
+
+            let furniture1 = new NaturalFurn("brown");
+            furniture1.name = "Muebles X01";
+            furniture1.material = "wood";
+
+            let furniture2 = new ArtificialFurn("yellow");
+            furniture2.name = "Yallow Y16";
+            furniture2.material = "metal";
+
+            document.write([furniture1.name, furniture1.type, furniture1.color, furniture1.material].join(", "));
+            document.write("<br/>")
+            document.write([furniture2.name, furniture2.type, furniture2.color, furniture2.material].join(", "));
+
+
+            
+        </script>
+    </body>
+</html>
